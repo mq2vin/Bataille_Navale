@@ -22,7 +22,9 @@ Ce projet est une implémentation numérique du jeu de société Bataille Navale
    git clone https://github.com/votre-nom-utilisateur/Bataille_Navale.git
 
 ## Contributeur
-## Contributeurs
-- [mq2vin](https://github.com/mq2vin) 
+- [mq2vin](https://github.com/mq2vin) (moi)
 
--
+- [Ronin0205](https://github.com/Ronin0205)
+
+## Statut du projet
+Le projet est terminé ✅.
