@@ -23,6 +23,6 @@ Ce projet est une implémentation numérique du jeu de société Bataille Navale
 
 ## Contributeur
 ## Contributeurs
-- [@username](https://github.com/mq2vin) 
+- [mq2vin](https://github.com/mq2vin) 
 
 -
