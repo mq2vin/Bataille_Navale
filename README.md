@@ -1,4 +1,4 @@
-# 	![alt text](C:\Users\Utilisateur\Pictures\banniere bataille navale.png)
+# 	![alt text](logo/banniere%20bataille%20navale.png)
 Un jeu classique de bataille navale développé en Java. Ce projet est complet et prêt à être utilisé.
 
 ## Description
