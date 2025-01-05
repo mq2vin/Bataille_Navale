@@ -1,7 +1,7 @@
 # Bataille Navale
 Un jeu classique de bataille navale développé en Java. Ce projet est complet et prêt à être utilisé.
 
-##Description
+## Description
 Ce projet est une implémentation numérique du jeu de société Bataille Navale. Les joueurs placent leurs navires sur une grille et tentent de couler les navires adverses en devinant leurs positions.
 
 ### Fonctionnalités principales :
@@ -12,11 +12,11 @@ Ce projet est une implémentation numérique du jeu de société Bataille Navale
 
 ---
 
-##Installation et exécution
-###Prérequis :
+## Installation et exécution
+### Prérequis :
 - **Java 8** (ou une version plus récente) doit être installé sur votre machine.
 
-###Étapes pour exécuter le projet :
+### Étapes pour exécuter le projet :
 1. Clonez le dépôt Git :
    ```bash
    git clone https://github.com/votre-nom-utilisateur/Bataille_Navale.git
