@@ -8,7 +8,7 @@ Ce projet est une implémentation numérique du jeu de société Bataille Navale
 - Interface utilisateur en mode console.
 - Gestion des règles classiques de la bataille navale.
 - Suivi du score.
-- Mode deux joueurs avec alternance des tours.
+- Mode Joueur contre Joueur et Joueur contre IA avec alternance des tours.
 
 ---
 
