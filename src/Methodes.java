@@ -415,8 +415,8 @@ public class Methodes {
         int colonne = position.charAt(0) - 'A';
 
         while (plateau[ligne][colonne] == 'X'){
-            System.out.println("Tir invalide vous avez déja tirer ici !!  ");
-            System.out.println("Entrez tir (format : A1): ");
+            System.out.println("Tir invalide vous avez déjà tiré ici !!  ");
+            System.out.println("Entrez les coordonées pour le tir (format : A1): ");
             System.out.print(couleurRougeVif);
             position = scanner.next().toUpperCase();
             System.out.println(reset);
