@@ -235,73 +235,70 @@ public class Methodes {
                 }
             }
 
-            //placement porte avion
-            if (taille==5){
-                if (direction == 'h') {
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne][colonne + i] = 'P';
+            switch (taille){
+                case 5:
+                    if (direction == 'h') {
+                            for (int i = 0; i < taille; i++) {
+                                plateau[ligne][colonne + i] = 'P';
+                            }
                     }
-                }
-                else{
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne+i][colonne] = 'P';
+                    else{
+                        for (int i = 0; i < taille; i++) {
+                            plateau[ligne+i][colonne] = 'P';
+                        }
                     }
-
-                }
+                        break;
+                case 4:
+                    if (direction == 'h') {
+                        for (int i = 0; i < taille; i++) {
+                            plateau[ligne][colonne + i] = 'C';
+                        }
+                    }
+                    else{
+                        for (int i = 0; i < taille; i++) {
+                            plateau[ligne+i][colonne] = 'C';
+                        }
+                    }
+                    break;
+                case 3:
+                    if (compteurs == 2){
+                        if (direction == 'h') {
+                            for (int i = 0; i < taille; i++) {
+                                plateau[ligne][colonne + i] = 'c';
+                            }
+                        }
+                        else{
+                            for (int i = 0; i < taille; i++) {
+                                plateau[ligne+i][colonne] = 'c';
+                            }
+                        }
+                    }
+                    else {
+                        if (direction == 'h') {
+                            for (int i = 0; i < taille; i++) {
+                                plateau[ligne][colonne + i] = 'S';
+                            }
+                        }
+                        else{
+                            for (int i = 0; i < taille; i++) {
+                                plateau[ligne+i][colonne] = 'S';
+                            }
+                        }
+                    }
+                    break;
+                case 2:
+                    if (direction == 'h') {
+                        for (int i = 0; i < taille; i++) {
+                            plateau[ligne][colonne + i] = 'T';
+                        }
+                    }
+                    else{
+                        for (int i = 0; i < taille; i++) {
+                            plateau[ligne+i][colonne] = 'T';
+                        }
+                    }
+                    break;
             }
-            else if (taille==4) {
-                if (direction == 'h') {
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne][colonne + i] = 'C';
-                    }
-                }
-                else{
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne+i][colonne] = 'C';
-                    }
-
-                }
-            }
-            else if (taille==3 && compteurs==2) {
-                if (direction == 'h') {
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne][colonne + i] = 'c';
-                    }
-                }
-                else{
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne+i][colonne] = 'c';
-                    }
-
-                }
-            }
-            else if (taille==3 && compteurs==3) {
-                if (direction == 'h') {
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne][colonne + i] = 'S';
-                    }
-                }
-                else{
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne+i][colonne] = 'S';
-                    }
-
-                }
-            }
-            else {
-                if (direction == 'h') {
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne][colonne + i] = 'T';
-                    }
-                }
-                else{
-                    for (int i = 0; i < taille; i++) {
-                        plateau[ligne+i][colonne] = 'T';
-                    }
-
-                }
-            }
-
         }
         return true;
     }
@@ -443,6 +440,39 @@ public class Methodes {
         int ligne = 0, colonne = 0;
         boolean cibleTrouvee = false;
 
+//        int i=0, j=0;
+//        while (i < plateau.length  && !cibleTrouvee){
+//            while (j < plateau[i].length){
+//                if (plateau[i][j] == 'X'){
+//                    if (estTirable(plateau, i + 1, j)) {
+//                        ligne = i + 1;
+//                        colonne = j;
+//                        cibleTrouvee = true;
+//                    }
+//                    //en dessous
+//                    else if (estTirable(plateau, i - 1, j)) {
+//                        ligne = i - 1;
+//                        colonne = j;
+//                        cibleTrouvee = true;
+//                    }
+//                    //a droite
+//                    else if (estTirable(plateau, i, j + 1)) {
+//                        ligne = i;
+//                        colonne = j + 1;
+//                        cibleTrouvee = true;
+//                    }
+//                    //a gauche
+//                    else if (estTirable(plateau, i, j - 1)) {
+//                        ligne = i;
+//                        colonne = j - 1;
+//                        cibleTrouvee = true;
+//                    }
+//                }
+//               j++;
+//            }
+//            i++;
+//        }
+
         // Recherche des zones proches aux 'X' pour continuer à viser un navire
         for (int i = 0; i < plateau.length; i++) {
             for (int j = 0; j < plateau[i].length; j++) {
@@ -483,7 +513,7 @@ public class Methodes {
             }
         }
 
-        // Si aucune cible proche n'est trouvée, tirer aléatoirement
+//         Si aucune cible proche n'est trouvée, tirer aléatoirement
         if (!cibleTrouvee) {
             do {
                 ligne = (int) (Math.random() * 10);
