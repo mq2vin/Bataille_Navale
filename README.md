@@ -20,6 +20,10 @@ Ce projet est une implémentation numérique du jeu de société Bataille Navale
 1. Clonez le dépôt Git :
    ```bash
    git clone https://github.com/votre-nom-utilisateur/Bataille_Navale.git
+   
+2. Selon votre OS :
+   * Windows : cliquez sur le fichier **Bataille Navale Windows.bat**
+   * Linux : cliquez sur le fichier **Bataille Navale Linux.sh**
 
 ## Contributeur
 - [mq2vin](https://github.com/mq2vin) (moi)
