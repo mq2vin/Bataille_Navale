@@ -1,34 +1,19 @@
 # 	![alt text](logo/banniere%20bataille%20navale.png)
-Un jeu classique de bataille navale développé en Java. Ce projet est complet et prêt à être utilisé.
-
+A classic Battleship game developed in Java. This project is complete and ready to use
 ## Description
-Ce projet est une implémentation numérique du jeu de société Bataille Navale. Les joueurs placent leurs navires sur une grille et tentent de couler les navires adverses en devinant leurs positions.
-
+This project is a digital implementation of the classic board game Battleship. Players place their ships on a grid and aim to sink the opponent's ships by guessing their positions.
 ### Fonctionnalités principales :
-- Interface utilisateur en mode console.
-- Gestion des règles classiques de la bataille navale.
-- Suivi du score.
-- Mode Joueur contre Joueur et Joueur contre IA avec alternance des tours.
+- Console-based user interface.
+- Implementation of classic Battleship rules.
+- Score tracking.
+- Player vs. Player and Player vs. AI modes with turn alternation.
 
 ---
 
-## Installation et exécution
-### Prérequis :
-- **Java 8** (ou une version plus récente) doit être installé sur votre machine.
-
-### Étapes pour exécuter le projet :
-1. Clonez le dépôt Git :
-   ```bash
-   git clone https://github.com/votre-nom-utilisateur/Bataille_Navale.git
-   
-2. Selon votre OS :
-   * Windows : cliquez sur le fichier **Bataille Navale Windows.bat**
-   * Linux : cliquez sur le fichier **Bataille Navale Linux.sh**
-
-## Contributeur
-- [mq2vin](https://github.com/mq2vin) (moi)
+## Contributors
+- [mq2vin](https://github.com/mq2vin) (me)
 
 - [Ronin0205](https://github.com/Ronin0205)
 
-## Statut du projet
-Le projet est terminé ✅.
+## Project Status
+The project is completed ✅.
