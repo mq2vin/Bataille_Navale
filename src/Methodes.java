@@ -434,86 +434,55 @@ public class Methodes {
 
     }
 
-
      // logique de tir de l'IA, qui vise des cases stratégiquement ou aléatoirement
     public static boolean gestionTirIa(char[][] plateau, char[][] plateauTir) {
         int ligne = 0, colonne = 0;
         boolean cibleTrouvee = false;
 
-//        int i=0, j=0;
-//        while (i < plateau.length  && !cibleTrouvee){
-//            while (j < plateau[i].length){
-//                if (plateau[i][j] == 'X'){
-//                    if (estTirable(plateau, i + 1, j)) {
-//                        ligne = i + 1;
-//                        colonne = j;
-//                        cibleTrouvee = true;
-//                    }
-//                    //en dessous
-//                    else if (estTirable(plateau, i - 1, j)) {
-//                        ligne = i - 1;
-//                        colonne = j;
-//                        cibleTrouvee = true;
-//                    }
-//                    //a droite
-//                    else if (estTirable(plateau, i, j + 1)) {
-//                        ligne = i;
-//                        colonne = j + 1;
-//                        cibleTrouvee = true;
-//                    }
-//                    //a gauche
-//                    else if (estTirable(plateau, i, j - 1)) {
-//                        ligne = i;
-//                        colonne = j - 1;
-//                        cibleTrouvee = true;
-//                    }
-//                }
-//               j++;
-//            }
-//            i++;
-//        }
-
-        // Recherche des zones proches aux 'X' pour continuer à viser un navire
-        for (int i = 0; i < plateau.length; i++) {
-            for (int j = 0; j < plateau[i].length; j++) {
-                if (plateau[i][j] == 'X') {
+        int i=0;
+        while(i < plateau.length){
+            int j=0;
+            while (j < plateau[i].length){
+                if(plateau[i][j] == 'X'){
                     // Vérifier les cases adjacentes
                     //au dessus
                     if (estTirable(plateau, i + 1, j)) {
                         ligne = i + 1;
                         colonne = j;
                         cibleTrouvee = true;
-                        break;
                     }
                     //en dessous
                     else if (estTirable(plateau, i - 1, j)) {
                         ligne = i - 1;
                         colonne = j;
                         cibleTrouvee = true;
-                        break;
                     }
                     //a droite
                     else if (estTirable(plateau, i, j + 1)) {
                         ligne = i;
                         colonne = j + 1;
                         cibleTrouvee = true;
-                        break;
                     }
                     //a gauche
                     else if (estTirable(plateau, i, j - 1)) {
                         ligne = i;
                         colonne = j - 1;
                         cibleTrouvee = true;
-                        break;
                     }
                 }
+                if (cibleTrouvee){
+                    j = plateau[i].length;
+                } else {
+                    j++;
+                }
             }
-            if (cibleTrouvee) {
-                break;
+            if (cibleTrouvee){
+                i = plateau.length;
+            } else {
+                i++;
             }
         }
 
-//         Si aucune cible proche n'est trouvée, tirer aléatoirement
         if (!cibleTrouvee) {
             do {
                 ligne = (int) (Math.random() * 10);
@@ -532,7 +501,6 @@ public class Methodes {
             return false;
         }
     }
-
 
      // Vérifie si une case est disponible pour un tir
     public static boolean estTirable(char[][] plateau, int ligne, int colonne) {
