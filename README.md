@@ -12,11 +12,22 @@ This project is a digital implementation of the classic board game Battleship. P
 - Player vs. Player and Player vs. AI modes with turn alternation.
 
 ---
+## Installation et exécution
+### Prérequis :
+- **Java 8** (ou une version plus récente) doit être installé sur votre machine.
 
-## Contributors
-- [mq2vin](https://github.com/mq2vin) (me)
+### Étapes pour exécuter le projet :
+1. Clonez le dépôt Git :
+   ```bash
+   git clone https://github.com/votre-nom-utilisateur/Bataille_Navale.git
+2. Selon votre OS :
+    * Windows : cliquez sur le fichier **Bataille Navale Windows.bat**
+    * Linux ou Mac : cliquez sur le fichier **Bataille Navale Linux.sh**
+
+## Contributeur
+- [mq2vin](https://github.com/mq2vin) (moi)
 
 - [Ronin0205](https://github.com/Ronin0205)
 
-## Project Status
-The project is completed ✅.
+## Statut du projet
+Le projet est terminé ✅.
